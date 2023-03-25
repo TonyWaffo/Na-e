@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <title>Panier | Na'e</title>
+        <link rel="stylesheet" type="text/css" href="css/all.min.css">
+        <link rel="stylesheet" type="text/css" href="Home.css">
+        <link rel="stylesheet" type="text/css" href="Cart.css">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script language="javascript" src="Home.js"></script>
+        <script language="javascript" src="Purchase.js"></script>
+        <script language="javascript" src="Cartview.js"></script>
+        
+    </head>
+    <body>
+      <header>
+          <i class="fas fa-bars"   onclick="appear()"></i>
+          <img src="logo blanc.png" alt="Na'e">
+          <!--<i class="fas fa-search"   onclick="searchBar()"></i>-->
+          <a href="Cartview.html"><i class="fas fa-shopping-cart"><span></span></i></a>
+      </header>
+      <div class="nav-box">
+        <div class="nav-head">
+          <i class="far fa-window-close"   onclick="disappear()"></i>
+        </div>
+        <div class="nav-bar">
+          <ul>
+            <li><a href="Home.html">Accueil</a></li>
+            <li><a href="Informations.html">Aide</a></li>
+            <li><a href="About.html">A propos</a></li>
+         </ul>
+        </div>
+      </div>
+      <div class="search-bar">
+        <input type="search" placeholder="Recherche">
+        <input type="button" value="">
+      </div>
+      <!--<div class="news">Super promo jusqu'à 50%
+      </div>-->
+      <section>
+        <img src="logo noir.png">
+        <h2>Panier</h2>
+        <div class="total-box">
+          <a href="Purchase.html"><input type="button" value="Payer" onclick="readyToPay()"></a><span class="total">Total</span>
+        <div>0 fcfa</div>
+       </div>
+        <form method="get" action="">
+        <div class="cart-box">
+           
+        </div>
+        </form>
+      </section>
+    </body>
+</html>

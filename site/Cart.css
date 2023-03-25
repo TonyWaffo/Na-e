@@ -1,0 +1,254 @@
+header{
+  background-color: black;
+}
+header>img{
+  position:relative;
+  width:22px;
+  height:22px;
+  margin-left:50%;
+  margin-top:13px;
+  transform: translateX(-50%) scale(2);
+  background-color: transparent;
+}
+.cart-box {
+  position:relative;
+  width:100%;
+  height:auto;
+  margin-bottom:80px;
+  border:0px solid black;
+}
+h2 {
+  text-align:center;
+  font-family:'Calibri Bold';
+  font-size:;
+}
+section>a{
+  position: relative;
+  float: right;
+  color:orange;
+  border:0px solid black;
+}
+section>img{
+  display:none;
+}
+.cart-item {
+  position:relative;
+  width:90%;
+  left:5%;
+  height:180px;
+  border-bottom:2px solid black;
+  font-family: 'Calibri Light', Calibri;
+}
+.cart-item img {
+  position:absolute;
+  width:20%;
+  height:50%;
+  top:5%;;
+  border:0px solid black;
+}
+.cart-details {
+  position:absolute;
+  left:28%;
+  width:40%;
+  height:90%;
+  top:5%;
+  border:0px solid black;
+}
+.cart-details .price{
+  position:absolute;
+  top:0%;
+  margin-left:50%;
+  transform: translateX(150%);
+  color:#464b4c;
+}
+.cart-details .name{
+  color:#82888a;
+}
+.cart-details .delete-item{
+  width:82%;
+  height:15%;
+  position:absolute;
+  top:82%;
+  left:0%;
+  background-color:black;
+  color:white;
+  border:1px solid transparent;
+  border-radius:5px;
+  text-align:center;
+  font-family:'Calibri Bold';
+}
+.cart-details .edit-item{
+  width:82%;
+  height:15%;
+  position:absolute;
+  top:65%;
+  left:0%;
+  background-color:black;
+  color:white;
+  border:1px solid transparent;
+  border-radius:5px;
+  text-align:center;
+  font-family:'Calibri Bold';
+}
+/*.cart-details input[type=number],select{
+  position:relative;
+  width:30%;
+  height:20%;
+  margin-bottom:2%;
+  outline:none;
+}
+.cart-details input[type=number]{
+  margin-left:6%;
+}*/
+.total-box {
+  position:fixed;
+  width:100%;
+  height:60px;
+  left:0%;
+  bottom:0px;
+  border:0px solid black;
+  background-color:black;
+  z-index:4;
+}
+.total-box input{
+  position:absolute;
+  width:30%;
+  height:50%;
+  top:25%;
+  background-color:#676c6e;
+  left:5%;
+  border:1px solid transparent;
+  border-radius:5px;
+  color:white;
+  font-family:'Calibri Bold';
+}
+.total-box div {
+  position:relative;
+  display:flex;
+  float:right;
+  width:40%;
+  height:40%;
+  top:30%;
+  border:0px solid white;
+  align-items:center;
+  justify-content:center;
+  color:white;
+  font-family:'Calibri Bold';
+}
+.total {
+  position:absolute;
+  font-family:;
+  font-size:;
+  color:white;
+  top:50%;
+  left:50%;
+  transform:translateX(-50%) translateY(-50%);
+}
+@media only screen and (max-width:300px){
+  .cart-details .delete-item{
+    top:87%;
+  }
+  .cart-details .edit-item{
+    top:70%;
+  }
+}
+@media only screen and (min-width:430px){
+  .cart-details .price{
+    position:absolute;
+    top:0%;
+    margin-left:50%;
+    transform: translateX(200%);
+    color:#464b4c;
+  }
+}
+@media only screen and (min-width:700px){
+  h2 {
+    margin-left:50%;
+    transform:translateX(-10%);
+  }
+  .cart-box {
+    position:relative;
+    width:60%;
+    left:40%;
+    height:auto;
+    margin-bottom:80px;
+    border:0px solid black;
+  }
+  section>a{
+    position: fixed;
+    left:70%;
+    transform: scale(1.5);
+  }
+  section>img{
+    display: block;
+    position:fixed;
+    width:130px;
+    height:130px;
+    border:0px solid black;
+    margin:20% 0% 0% 22%;
+    transform: translate(-50%,-50%);
+  }
+  .total-box {
+    position:fixed;
+    width:60%;
+    height:60px;
+    left:40%;
+    bottom:0px;
+    border:0px solid black;
+    z-index:4;
+  }
+  .total-box input{
+    position:absolute;
+    width:30%;
+    height:50%;
+    top:25%;
+    left:5%;
+    border:1px solid transparent;
+    border-radius:5px;
+    color:white;
+  }
+  .total-box div {
+    position:relative;
+    display:flex;
+    float:right;
+    width:40%;
+    height:40%;
+    top:30%;
+    border:0px solid white;
+    align-items:center;
+    justify-content:center;
+  }
+}
+@media only screen and (min-width:900px){
+  h2 {
+    margin-left:60%;
+    transform:translateX(-10%);
+  }
+  .cart-box {
+    position:relative;
+    width:50%;
+    left:50%;
+    height:auto;
+    margin-bottom:80px;
+    border:0px solid black;
+  }
+  section>a{
+    position: fixed;
+    left:70%;
+    transform: scale(1.5);
+  }
+  section>img{
+    width:200px;
+    height:200px;
+    margin:20% 0% 0% 25%
+  }
+  .total-box {
+    position:fixed;
+    width:50%;
+    height:60px;
+    left:50%;
+    bottom:0px;
+    border:0px solid black;
+    z-index:4;
+  }
+}

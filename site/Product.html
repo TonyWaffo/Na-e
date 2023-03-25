@@ -1,0 +1,143 @@
+<html>
+    <head>
+        <title>Article | Na'e</title>
+        <link rel="stylesheet" type="text/css" href="css/all.min.css">
+        <link rel="stylesheet" type="text/css" href="Home.css">
+        <link rel="stylesheet" type="text/css" href="Product.css">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script language="javascript" src="Home.js"></script>
+        <script language="javascript" src="Cart.js"></script>
+        <script language="javascript" src="Product.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+      </head>
+    <body>
+      <header>
+        <i class="fas fa-bars"   onclick="appear()"></i>
+        <img src="logo blanc.png" alt="Na'e">
+        <!--<i class="fas fa-search"   onclick="searchBar()"></i>-->
+        <a href="Cartview.html"><i class="fas fa-shopping-cart"><span></span></i></a>
+    </header>
+      <div class="nav-box">
+        <div class="nav-head">
+          <i class="far fa-window-close"   onclick="disappear()"></i>
+        </div>
+        <div class="nav-bar">
+          <ul>
+            <li><a href="Home.html">Accueil</a></li>
+            <li><a href="Informations.html">Aide</a></li>
+            <li><a href="About.html">A propos</a></li>
+         </ul>
+        </div>
+      </div>
+      <div class="search-bar">
+        <input type="search" placeholder="Recherche">
+        <input type="button" value="">
+      </div>
+      <!--<div class="news">Super promo jusqu'à 50%
+      </div>-->
+      <div class="item">
+        <img src="logo blanc.png" height="100%" width="100%">
+      </div>
+      <div class="article">
+        <span class="name"></span><br>
+        <span class="price"></span></br></br>
+         <span class="color-text" ></span>
+         <div class="color-box">
+          <div class="white" onclick="changeColor('blanche',event)"></div>
+          <div class="orange" onclick="changeColor('orange',event)"></div>
+          <div class="red" onclick="changeColor('rouge',event)"></div>
+          <div class="gray" onclick="changeColor('grise',event)"></div>
+          <div class="bordeau" onclick="changeColor('bordeaux',event)"></div>
+          <div class="beige" onclick="changeColor('beige',event)"></div>
+          <div class="green" onclick="changeColor('verte',event)"></div>
+          <div class="blue" onclick="changeColor('bleu',event)"></div>
+        </div>
+        <span class="size">Taille</span>
+         <select>
+           <option value="S">S</option>
+           <option value="M">M</option>
+           <option value="L">L</option>
+           <option value="XL">XL</option>
+          <option value="XXL">XXL</option>
+        </select>
+         <span class="quantity">Qté</span><input type="number" value="1" required></br></br>
+         <span class="alt"></span></br><br>
+         <a href="Cart.html"><input type="button" class="mama" value="Ajouter au panier" onclick="checkBeforeAdding()"></a>
+      </div>
+      <span class='available-size'>Nos tailles</span>
+      <div class="stock-container">
+        <div class="stock-box">
+          <span class="stock-size">S</span>
+          <span class="stock-number"></span>
+        </div>
+        <div class="stock-box">
+          <span class="stock-size">M</span>
+          <span class="stock-number"></span>
+        </div>
+        <div class="stock-box">
+          <span class="stock-size">L</span>
+          <span class="stock-number"></span>
+        </div>
+        <div class="stock-box">
+          <span class="stock-size">XL</span>
+          <span class="stock-number"></span>
+        </div>
+        <div class="stock-box">
+          <span class="stock-size">XXL</span>
+          <span class="stock-number"></span>
+        </div>
+      </div>
+      <div class="description">
+        <div class="desc-box">
+          <div><img src="décision.png" alt="Description"><span>Décision</span></div>
+          <div><img src="semence(1).png" alt="Description"><span>Semence</span></div>
+          <div><img src="discernement.png" alt="Description"><span>Discernement</span></div>
+          <div><img src="borné(1).png" alt="Description"><span>Le borné</span></div>
+          <div><img src="Modèle 1 relié.png" alt="Description">
+            <span>La voie du mal est bornée et courte, en semant du mal on récolte le mal. 
+              Et le bien engendre le bien. Il est bien de s'en souvenir avant de prendre des
+               décisions et de savoir discerner l'un de l'autre.
+            </span>
+          </div>
+        </div>
+        <div class="desc-box">
+          <div><img src="Maalhonnète.png" alt="Description"><span>Le malhonnête</span></div>
+          <div><img src="semence(1).png" alt="Description"><span>Semence</span></div>
+          <div><img src="discernement.png" alt="Description"><span>Discernement</span></div>
+          <div><img src="borné(1).png" alt="Description"><span>Le borné</span></div>
+          <div><img src="Modèle 2 relié.png" alt="Description">
+            <span>Plus de mal que de bien. Beaucoup de tentations. Beaucoup de conflits. Il 
+              est important de toujours discerner le bien du mal et cultiver le bien.
+               Car le bien engendre le bien et seul l'arbre du bien produit les bons fruits.
+            </span>
+          </div>
+        </div>
+        <div class="desc-box">
+          <div><img src="décision.png" alt="Description"><span>Décision</span></div>
+          <div><img src="semence(1).png" alt="Description"><span>Semence</span></div>
+          <div><img src="discernement.png" alt="Description"><span>Discernement</span></div>
+          <div><img src="borné(1).png" alt="Description"><span>Le borné</span></div>
+          <div><img src="Maalhonnète.png" alt="Description"><span>Le malhonnête</span></div>
+          <div><img src="lié.png" alt="Description"><span>Tous lié</span></div>
+          <div><img src="Modèle 3 relié.png" alt="Description">
+            <span>Nous sommes tous liés, nous partageons les deux même jambes et impossible de 
+              marcher dans deux sens différents sans se briser et se faire du mal. L'amour au lieu 
+              de la haine. La compréhension au lieu des préjugés. Seulement ainsi nous avançons.
+            </span>
+          </div>
+        </div>
+        <div class="desc-box"><span>Tout premier modèle Na’e – Classic Na’e</span></div>
+        <div class="desc-box"><span>T-shirt longue manche Na’e – Men</span></div>
+        <div class="desc-box"><span>Crop longue manche Na’e – Women</span></div>
+      </div>
+      <footer>
+        <a href="https://www.facebook.com/Nae-By-Africa-105288434622126/"><i class="fab fa-facebook-square"  ></i></a>
+        <a href="https://instagram.com/nae_by_africa?igshid=s7agz55gfhl0"><i class="fab fa-instagram"  ></i></a>
+        <a href="http:/wa.me/+491783523770"><i class="fab fa-whatsapp"  ></i></a>
+        <a href="Informations.html"><i class="fas fa-question-circle"  ></i></a>
+        <a href="https://www.google.com/maps/place/264+Rue+Prince+Bell,+Douala/@4.0397328,9.6914474,17z/data=!3m1!4b1!4m5!3m4!1s0x106112ee5cafb421:0xeb17a6531c50f0aa!8m2!3d4.0397328!4d9.6936361"><i class="fa fa-map-marker-alt"> 264 Rue Prince Bell, Bali</i></a>
+        <a>Programmé par Waffo</a>
+      </footer>
+    </body>
+</html>

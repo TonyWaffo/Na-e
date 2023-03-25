@@ -1,0 +1,230 @@
+header{
+  background-color: black;
+}
+header>img{
+  position:relative;
+  width:22px;
+  height:22px;
+  margin-left:50%;
+  margin-top:13px;
+  transform: translateX(-50%) scale(2);
+  background-color: transparent;
+}
+.banner{ 
+  position:relative;
+  text-align: center;
+  width:100%;
+  height:10px;
+  border:0px solid black;
+  margin-bottom:0px;
+}
+.banner img{
+  width:60px;
+  height:60px;
+  transform: scale(3);
+}
+.banner h1{
+  font-family:'Calibri Bold';
+  color:black;
+  font-size:50px;
+  margin-top:20px;
+  font-weight:1000;
+}
+.banner i{
+  transform:scale(4);
+}
+h2{
+  font-family:'Calibri Bold';
+  font-weight:1000;
+}
+p{
+  font-family:'calibri light', Calibri;
+  font-weight: 500;
+}
+.banner h2 {
+  display:block;
+  position:absolute;
+  bottom:10px;
+  color:black;
+}
+strong{
+  font-weight:1000;
+}
+.about-first,.about-second{
+  position:relative;
+  width:100%;
+  height:650px;
+  margin-top:40px;
+  border:0px solid black;
+  background-color:;
+}
+.about-first img,.about-second img{
+  object-fit:;
+}
+.about-second{
+  height:620px;
+  background-color:;
+  height:;
+}
+.about-first div:nth-child(1){
+  position:relative;
+  width:80%;
+  margin-left:10%;
+  height:45%;
+  border:0px solid black;
+  word-wrap:break-word;
+  text-align:center;
+}
+.about-first div p {
+  margin:0px 10px;
+}
+.about-first div h2{
+  margin-top:20px;
+  font-size:30px;
+}
+.about-first div:nth-child(2){
+  position:relative;
+  width:75%;
+  height:45%;
+  margin-top:13%;
+  left:50%;
+  transform:translateX(-50%);
+  border:0px solid black;
+  box-shadow:0px 0px 20px black;
+}
+.about-second div:nth-child(1){
+  position:relative;
+  width:80%;
+  margin-left:10%;
+  height:45%;
+  border:0px solid black;
+  word-wrap:break-word;
+  text-align:center;
+}
+.about-second div p {
+  margin:0px 10px;
+}
+.about-second div h2{
+  margin-top:20px;
+  font-size:30px;
+}
+.about-second div:nth-child(2){
+  position:relative;
+  width:75%;
+  height:45%;
+  margin-top:5%;
+  left:50%;
+  transform:translateX(-50%);
+  border:0px solid black;
+  box-shadow:0px 0px 20px black;
+}
+.author{
+  position: relative;
+  width: 170px;
+  height:auto;
+  left: 50%;
+  margin-top:20px;
+  transform: translateX(-50%);
+  font-size:13px;
+}
+@media only screen and (max-width:320px){
+  .about-first div:nth-child(1){
+    position:relative;
+    width:100%;
+    margin-left:0%;
+  }
+  .about-second div:nth-child(1){
+    position:relative;
+    width:100%;
+    margin-left:0px; 
+  }
+  .about-first div:nth-child(2){
+    margin-top:18%;
+  }
+  .about-second div:nth-child(2){
+    margin-top:8%;
+  }
+}
+@media only screen and (min-width:500px){
+  .about-first,.about-second{
+    width:100%;
+    height:550px;
+    margin-top:40px;
+  }
+  .about-second{
+    height:520px;
+  }
+}
+@media only screen and (min-width:700px){
+  .banner{
+    height:40px
+  }
+  .about-first,.about-second{
+    position:relative;
+    width:100%;
+    left:0%;
+    height:350px;
+    margin-left:0px;
+    border:0px solid black;
+  }
+  .about-second{
+    height:400px;
+  }
+  .about-first>div:nth-child(1){
+    position:absolute;
+    left:7%;
+    width:50%;
+    margin-left:0px;
+    height:100%;
+    border:0px solid black;
+    word-wrap:break-word;
+    text-align:center;
+  }
+  .about-first div p {
+    margin:0px 10px;
+  }
+  .about-first div h2{
+    margin-top:20px;
+  }
+  .about-first>div:nth-child(2){
+    position:absolute;
+    left:75%;
+    width:25%;
+    height:80%;
+    margin-top:0;
+    top:10%;
+    border:0px solid black;
+    box-shadow:0px 0px 20px black;
+  }
+  .about-second>div:nth-child(1){
+    position:absolute;
+    left:43%;
+    width:50%;
+    margin-left: 0px;
+    height:100%;
+    border:0px solid black;
+    word-wrap:break-word;
+    text-align:center;
+  }
+  .about-second div p {
+    margin:0px 10px;
+  }
+  .about-first div h2{
+    margin-top:20px;
+  }
+  .about-second>div:nth-child(2){
+    position:absolute;
+    left:25%;
+    width:25%;
+    margin-top:0;
+    height:80%;
+    top:10%;
+    border:0px solid black;
+    box-shadow:0px 0px 20px black;
+  }
+  .author{
+    position: relative;
+    width: 170px;
+    left: 75%;
+  }
+}

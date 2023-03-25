@@ -1,0 +1,77 @@
+<html>
+    <head>
+        <title>Paiement | Na'e</title>
+        <link rel="stylesheet"  href="css/all.min.css">
+        <link rel="stylesheet"  href="C:\Users\Tony Adams\Documents\Na'e\all.css">
+        <link rel="stylesheet" type="text/css" href="Home.css">
+        <link rel="stylesheet" type="text/css" href="Purchase.css">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script language="javascript" src="Home.js"></script>
+        <script language="javascript" src="Cart.js"></script>
+        <script language="javascript" src="Purchase.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
+      </head>
+    <body>
+      <header>
+          <i class="fas fa-bars"   onclick="appear()"></i>
+          <img src="logo blanc.png" alt="Na'e">
+          <!--<i class="fas fa-search"   onclick="searchBar()"></i>-->
+          <a href="Cartview.html"><i class="fas fa-shopping-cart"><span></span></i></a>
+      </header>
+      <div class="nav-box">
+        <div class="nav-head">
+          <i class="far fa-window-close"   onclick="disappear()"></i>
+        </div>
+        <div class="nav-bar">
+          <ul>
+            <li><a href="Home.html">Accueil</a></li>
+            <li><a href="Informations.html">Aide</a></li>
+            <li><a href="About.html">A propos</a></li>
+         </ul>
+        </div>
+      </div>
+      <div class="search-bar">
+        <input type="search" placeholder="Recherche">
+        <input type="button" value="">
+      </div>
+      <!--<div class="news">Super promo jusqu'à 50%
+      </div>-->
+      <section>
+        <div class="form-box">
+          <form>
+            <h2>Facture</h2>
+            <div class="final-articles">
+            </div>
+            <h2>Formulaire</h2>
+            <p>Nom</p>
+            <input class="fill" type="text" name="name" placeholder="Nom" required></br>
+            <p>Prénom</p>
+            <input class="fill" type="text" name="surname" placeholder="Prénom" required></br>
+            <p>Adresse mail</p>
+            <input class="fill"  type="email" name="mail" placeholder="E-mail" required></br>
+            <p>Téléphone (WhatsApp) </p>
+            <input class="fill" type="tel" name="phone" placeholder="Numero" required></br>
+            <p>Ville</p>
+            <input class="fill" type="radio" onclick="showInput()" name="ville" value="">Douala
+            <input class="fill" type="radio" onclick="showMessage()" name="ville" value="">Yaoundé</br>
+            <p id="quarter">
+            </p>
+            <input class="fill" id="quarter-input" type="text" name="quarter" placeholder="Quartier" required></br>
+            <div class="delivery-fee"><span></span></div>
+            <div class="alert-text"><span>*formulaire incomplet</span></div>
+            <input type="button" value="Valider la commande" class="pay"  onclick="validation()">
+          </form>
+        </div>
+      </section>
+      <footer>
+        <a href="https://www.facebook.com/Nae-By-Africa-105288434622126/"><i class="fab fa-facebook-square"  ></i></a>
+        <a href="https://instagram.com/nae_by_africa?igshid=s7agz55gfhl0"><i class="fab fa-instagram"  ></i></a>
+        <a href="http:/wa.me/+491783523770"><i class="fab fa-whatsapp"  ></i></a>
+        <a href="Informations.html"><i class="fas fa-question-circle"  ></i></a>
+        <a href="https://www.google.com/maps/place/264+Rue+Prince+Bell,+Douala/@4.0397328,9.6914474,17z/data=!3m1!4b1!4m5!3m4!1s0x106112ee5cafb421:0xeb17a6531c50f0aa!8m2!3d4.0397328!4d9.6936361"><i class="fa fa-map-marker-alt"> 264 Rue Prince Bell, Bali</i></a>
+        <a>Programmé par Waffo</a>
+      </footer>
+    </body>
+</html>

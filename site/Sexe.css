@@ -1,0 +1,232 @@
+header{
+  background-color: transparent;
+  box-shadow: 0px 0px 0px;
+}
+header>img{
+  position:relative;
+  width:22px;
+  height:22px;
+  margin-left:50%;
+  margin-top:50px;
+  transform: translate(-50%,30%) scale(2.5);
+  background-color: transparent;
+}
+.nav-box{
+  background-color: transparent;
+}
+.fa-bars{
+  color:rgb(148, 145, 145);
+}
+header .fa-shopping-cart{
+  color:rgb(148, 145, 145);
+}
+header i span{
+  color:rgb(148, 145, 145);
+}
+.rubric {
+  position:relative;
+  margin:20px 0px 50px 0px;
+  left: 0;
+  margin-left:50%;
+  transform:translate(-50%) scale(1);
+  width:80px;
+  height:98px;
+  border:0px solid black;
+  text-align:center;
+}
+.rubric h2 {
+  font-family:'Calibri Bold';
+  color:rgb(85, 81, 81);
+}
+.rubric h2::after{
+  content:"";
+  width:100px;
+  height:4px;
+  position: absolute;
+  left:50%;
+  transform: translateX(-50%);
+  bottom:-8px;
+  background-color: rgb(85, 81, 81);
+}
+.rubric h2 p {
+  font-size:20px;
+  font-family: 'Calibri Light', Calibri;
+}
+section{
+  position:relative;
+  display:flex;
+  flex-direction:row;
+  justify-content:space-around;
+  flex-wrap:wrap;
+  margin-top:50px;
+  width:94%;
+  left:3%;
+  height:auto;
+  border:0px solid black;
+}
+section .product{
+  width:160px;
+  height:270px;
+  border:0px solid black;
+  margin-bottom:20px;
+}
+.picture{
+  position:relative;
+  width:100%;
+  height:75%;
+  border:0px solid black;
+}
+.promo {
+  position:absolute;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  top:10%;
+  left:;
+  width:auto;
+  height:10%;
+  padding:0px 4px;
+  border:0px solid black;
+  background-color:#879da8;
+  color:white;
+  opacity:0.7;
+  font-family: 'Calibri Light', Calibri;
+  font-size:15px;
+}
+.cart-shape {
+  position:absolute;
+  bottom:10%;
+  right:0%;
+  width:30%;
+  height:12%;
+  border:0px solid black;
+  border-radius:0px 0px 0px 0px;
+  background-color:#63a0b0;
+  color:white;
+  text-align:center;
+}
+.cart-shape .fa-shopping-cart{
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translateX(-50%)translateY(-50%) scale(1);
+  color:white;
+}
+.details {
+  position:relative;
+  width:100%;
+  height:25%;
+  border:0px solid black;
+  word-break:wrap;
+  text-align:left;
+}
+.details .name {
+  font-family: 'Calibri Light', Calibri;
+  font-size:14px;
+  color:#82888a;
+}
+.details .price {
+  font-family: 'Calibri Light', Calibri;
+  font-size:20px;
+  color:#464b4c;
+}
+.text-color{
+  position:absolute;
+  color:transparent;
+}
+.advertising{
+  width:80%;
+  height:350px;
+  margin-left:0%;
+  height:350px;
+  border:1px solid black;
+  margin-bottom:60px;
+  background-color:black;
+}
+.advertising img{
+  width:230px;
+  height:100%;
+  margin-left:50%;
+  margin-top:0%;
+  transform: translateX(-50%);
+}
+@media only screen and (min-width:600px){
+  .nav-bar a {
+    color:rgb(148, 145, 145);
+  }
+  .nav-bar>ul>li {
+    border-left:3px solid rgb(148, 145, 145);
+  }
+  .rubric {
+    position:relative;
+    margin-top:60px;
+    left: 0;
+    margin-left:50%;
+    transform:translate(-50%) scale(1);
+    width:90px;
+    height:109px;
+    border:0px solid black;
+    text-align:center;
+  }
+  .rubric h2 {
+    position:relative;
+    margin-left:50%;
+    transform: translateX(-50%);
+  }
+  section{
+    position:relative;
+    display:flex;
+    flex-direction:row;
+    justify-content:space-around;
+    flex-wrap:wrap;
+    margin-top:50px;
+    width:94%;
+    left:3%;
+    height:auto;
+    border:0px solid black;
+  }
+  section .product{
+    width:160px;
+    height:270px;
+    border:0px solid black;
+    margin-bottom:20px;
+    margin-right:5px;
+  }
+  .advertising{
+    height:350px;
+    margin-left:10%;
+  }
+}
+@media only screen and (min-width:950px){
+  .rubric {
+    position:relative;
+    margin-top:60px;
+    left: 0;
+    margin-left:50%;
+    transform:translate(-50%) scale(1);
+    width:100px;
+    height:122px;
+    border:0px solid black;
+    text-align:center;
+  }
+  section{
+    position:relative;
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    flex-wrap:wrap;
+    margin-top:50px;
+    width:94%;
+    left:3%;
+    height:auto;
+    border:0px solid black;
+  }
+  section .product{
+    width:200px;
+    height:300px;
+    border:0px solid black;
+    margin-bottom:10px;
+  }
+  
+}
+
